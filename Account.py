@@ -1,4 +1,6 @@
 class Account:
+    """Describes the account of a bank"""
+    
     def __init__(self, name, balance, password) -> None:
         self.name = name
         self.balance = balance
@@ -39,6 +41,8 @@ class Account:
         return self.balance
     
     def show(self):
+        """Shows the current data"""
+        
         print("Name: ", self.name)
         print("Balance: ", self.balance)
         print()
